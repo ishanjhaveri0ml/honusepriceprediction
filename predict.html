@@ -1,0 +1,66 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PREDICT</title>
+    <style>
+
+        body{
+
+            background-image: url("{% static 'wp4110648.jpg' %}");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+
+
+
+
+        }
+
+    </style>
+</head>
+<body class="background images">
+<div class="main">
+    <h1>Please enter the following values</h1>
+    <form action="result">
+        <div class="row">
+            <div class="col-sm-4" style="background-color:Bisque;">
+                <p>Avg. area income</p>
+                <input type="text" name="n1">
+            </div>
+            <div class="col-sm-4" style="background-color:DarkSeaGreen;">
+                <p>Avg. House age</p>
+                <input type="text" name="n2">
+            </div>
+            <div class="col-sm-4" style="background-color:LightPink;">
+                <p>Avg. area number of rooms</p>
+                <input type="text" name="n3">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4" style="background-color:Turquoise;">
+                <p>Avg. number of bedrooms</p>
+                <input type="text" name="n4">
+            </div>
+            <div class="col-sm-4" style="background-color:RosyBrown;">
+                <p>Avg. area population</p>
+                <input type="text" name="n5">
+            </div>
+        </div>
+        <div class="row">
+            <input type="submit" value="PREDICT">
+        </div>
+
+
+    </form>
+    <div class="row">
+        <h2 style="color: white;">{{result2}}</h2>
+
+    </div>
+
+</div>
+
+</body>
+</html>
